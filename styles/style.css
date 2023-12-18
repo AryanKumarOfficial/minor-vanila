@@ -194,6 +194,75 @@ section.logo-section .links ul li:hover {
     transform: scale(1.1);
 }
 
+/* main nav starts */
+
+nav {
+    display: flex;
+    background: #07294d;
+    color: white;
+}
+
+nav.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+}
+
+nav.navbar ul li {
+    text-decoration: none;
+    list-style: none;
+    /* border-right: 6px solid #b15110; */
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* vertical line after each li */
+
+
+
+nav.navbar ul li:not(:last-child):after {
+    content: '';
+    width: 0;
+    position: relative;
+    border: 1px solid white;
+    top: 0;
+    /* left: 100px; */
+
+}
+
+nav.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+nav.navbar ul li a:hover {
+    color: #b15110;
+}
+
+nav.navbar ul li a i {
+    font-size: x-large;
+    margin-right: 5px;
+    color: white;
+    align-items: center;
+    position: relative;
+    /* margin: 10px 2px; */
+
+}
+
+nav.navbar ul li a i:hover {
+    color: #b15110;
+}
+
+/* main nav ends */
+
 /* utilities */
 
 a {
